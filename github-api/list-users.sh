@@ -1,5 +1,29 @@
 #!/bin/bash
 
+###############################################################################
+## ABOUT:
+# This script checks a GitHub repository and lists all users with read (pull) access.
+# It uses GitHub's REST API v3 with basic authentication.
+# Designed for repository administrators to audit access permissions.
+#
+#
+## INPUT REQUIREMENTS:
+# 1) Environment variables:
+#    - $username: GitHub username for authentication
+#    - $token: GitHub personal access token with 'repo' scope
+# 2) Command-line arguments:
+#    - $1: Repository owner (username or organization name)
+#    - $2: Repository name
+# 3) Dependencies:
+#    - curl: For API requests
+#    - jq: For JSON parsing
+#
+## OWNER: iam-sdeep
+#
+#
+## If there is any issue feel free to contact owner.
+###############################################################################
+
 # GitHub API URL
 API_URL="https://api.github.com"
 
