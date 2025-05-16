@@ -1,6 +1,6 @@
 #!/bin/bash
 
-###############################################################################
+#####################################################################################################
 ## ABOUT:
 # This script checks a GitHub repository and lists all users with read (pull) access.
 # It uses GitHub's REST API v3 with basic authentication.
@@ -23,7 +23,7 @@
 #
 #
 ## If there is any issue feel free to contact owner.
-###############################################################################
+######################################################################################################
 
 # GitHub API URL
 API_URL="https://api.github.com"
